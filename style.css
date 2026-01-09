@@ -1,0 +1,30 @@
+
+html {
+    /* scroll-behavior: smooth; */
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    line-height: 1.5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --main-color: #6195FF;
+}
