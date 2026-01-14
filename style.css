@@ -29,6 +29,7 @@ a {
 :root {
     --main-color: #6195FF;
     --background-color: #fafafa;
+    --w-color: white;
 }
 
 /*start hero-serction */
@@ -74,6 +75,7 @@ a {
     padding-top: 10px;
     margin-right: auto;
     margin-left: auto;
+    transition: 0.2s;
 }
 
 .header .logo img{
@@ -111,7 +113,7 @@ a {
     font-family: "Font Awesome 7 Free";
     font-weight: 900;
     font-size: 8px;
-    color: white;
+    color: var(--w-color), white;
     position: absolute;
     right: -13px;
     top: 37%;
@@ -177,6 +179,14 @@ a {
 .black {
     color: black !important;
 }
+
+.bk-color {
+    background-color: white !important;
+}
+
+.display {
+    display: none;
+}
 /*end hero-serction */
 
 /* media query */
@@ -188,7 +198,46 @@ a {
 
 /* Medium devices (tablets) */
 @media (max-width: 768px) {
+    .header .nav {
+        height: calc(100vh - 50px);
+        width: 250px;
+        background-color: #1C1D21;
+        position: fixed;
+        right: 0;
+        top: 57px;
+    }
 
+    .header-container {
+        background-color: white;
+    }
+
+    .header .nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .header .nav ul a {
+        font-size: 15px;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        border-left: 6px solid var(--main-color);
+        padding-left: 10px;
+    }
+
+    .header .nav ul a:hover {
+        background-color: var(--main-color);
+    }
+
+    .header #wh-img {
+        display: none;
+    }
+    .header {
+        padding-top: 0 !important;
+    }
+
+    .header .nav a::after {
+        display: none;
+    }
 }
 
 /* Large devices (laptops) */
