@@ -19,10 +19,20 @@ window.addEventListener('load', function() {
     }
 
     function checkHeaderContainer() {
-        if (window.scrollY > 50) {
-            myElement.classList.add('bk-color');
+        if (window.innerWidth <= 768) {
+            myElement.classList.add("bk-color");
+        } else if (window.scrollY > 50) {
+            myElement.classList.add("bk-color");
         } else {
-            myElement.classList.remove('bk-color');
+            myElement.classList.remove("bk-color");
+        }  
+    }
+
+    function noName() {
+        if (window.innerWidth <= 768 && window.scrollY > 50) {
+            for (let i = 0; i < newElement.length; i++) {
+                newElement[i].classList.remove('black')
+            }
         }
     }
 
@@ -57,12 +67,18 @@ window.addEventListener('load', function() {
     arrowChecker();
     colorImg()
     header1()
+    noName()
 
+    window.addEventListener("resize", function() {
+        noName()
+        checkHeaderContainer()
+    });
     window.addEventListener('scroll', function() {
         checkHeader();
         checkHeaderContainer()
         arrowChecker()
         colorImg()
         header1()
+        noName()
     });
 });
