@@ -281,8 +281,34 @@ a {
 
 
 /* start welcome-section */
+.welcome-section {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.text-hd {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: clamp(1.5625rem, 1.4336rem + 0.6875vw, 2.25rem);
+    color: #10161A;
+    position: relative;
+}
+
+.text-hd::after {
+    content: "";
+    height: 4px;
+    width: 40px;
+    background-color: var(--main-color);
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /* end welcome-section */
+
 /* media query */
 
 /* Small devices (phones) */
