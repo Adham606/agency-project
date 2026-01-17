@@ -284,9 +284,6 @@ a {
 .welcome-section {
     margin-top: 120px;
     margin-bottom: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .text-hd {
@@ -306,6 +303,69 @@ a {
     display: block;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.welcome-section .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.welcome-section .box::after {
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #1C1D21;
+    position: absolute;
+    transition: 0.2s;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.box:hover::after {
+    width: 100%;
+}
+
+.box:hover h3 {
+    color: #fff;
+}
+
+.welcome-section .box {
+    text-align: center;
+    border: 1px solid #EEE;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.welcome-section i {
+    font-size: 36px;
+    color: var(--main-color);
+}
+
+.welcome-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    color: #868F9B;
+}
+
+.welcome-section a {
+    color: #6195FF;
+    margin-top: 15px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* end welcome-section */
 
