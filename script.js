@@ -5,6 +5,8 @@ window.addEventListener('load', function() {
     let whImg = document.getElementById("wh-img")
     let blImg = document.getElementById("bl-img")
     let header = document.getElementsByClassName('header')[0]
+    let spanHolder = document.querySelector('.span-holder')
+    let ul = document.querySelector('.nav')
 
     function checkHeader() {
         if (window.scrollY > 50) {
@@ -61,6 +63,10 @@ window.addEventListener('load', function() {
             header.style.setProperty("padding-top", "10px");
         }
     }
+
+    spanHolder.addEventListener ("click", function () {
+        ul.classList.toggle("open")
+    })
 
     checkHeaderContainer();
     checkHeader();

@@ -41,6 +41,9 @@ a {
     background-position: center;
     background-size: cover;
     z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-section::after {
@@ -53,6 +56,15 @@ a {
     top: 0;
     opacity: 0.8;
     z-index: -1;
+}
+
+.hero-section .hero-text {
+    color: white;
+    text-align: center;
+}
+
+.hero-section .hero-text h1 {
+    text-transform:uppercase;
 }
 
 .header-container {
@@ -148,6 +160,10 @@ a {
     align-items: center;
 }
 
+.header .span-holder {
+    display: none;
+}
+
 .header .drop-minue {
     position: relative;
 }
@@ -187,6 +203,34 @@ a {
 .display {
     display: none;
 }
+
+.header span {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: black;
+}
+
+.header span::after,
+.header span::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.header span::after {
+    top: 8px;
+    left: 0;
+}
+
+.header span::before {
+    top: -8px;
+    left: 0;
+}
 /*end hero-serction */
 
 /* media query */
@@ -197,14 +241,20 @@ a {
 }
 
 /* Medium devices (tablets) */
+.open {
+    width: 250px !important;
+}
+
 @media (max-width: 768px) {
     .header .nav {
         height: calc(100vh - 50px);
-        width: 250px;
+        width: 0;
         background-color: #1C1D21;
         position: fixed;
         right: 0;
         top: 57px;
+        transition: 0.2s;
+        z-index: 99999;
     }
 
     .header-container {
@@ -242,12 +292,26 @@ a {
         display: none;
     }
     
-    .header .drop-minue ul{
-        display: block;
+    .nav ul li {
+        height: auto;
+    }
+
+    .header .drop-minue ul {
+        position: relative;
         width: 100%;
         height: 50px;
+        bottom: 0;
         background-color: var(--main-color);
+        padding: 5px 20px 5px 0;
+    }
+
+    .header .span-holder {
         cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
