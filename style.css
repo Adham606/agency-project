@@ -168,7 +168,7 @@ a {
     display: block;
 }
 
-.header .drop-minue a:hover::before {
+.drop-minue:hover .lol1::before {
     transform: rotate(-90deg);
 }
 
