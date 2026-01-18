@@ -5,7 +5,6 @@ html {
 }
 
 body {
-    height: 4000px;
     font-family: 'Varela Round', sans-serif;
     line-height: 1.5;
 }
@@ -374,6 +373,10 @@ a {
     margin-right: auto;
 }
 /* end welcome-section */
+
+/* start featured works */
+
+/* end featured works */
 
 /* media query */
 
