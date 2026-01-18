@@ -284,6 +284,10 @@ a {
 .welcome-section {
     margin-top: 120px;
     margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-hd {
@@ -306,13 +310,14 @@ a {
 }
 
 .welcome-section .box-container {
+    width: 1170px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
     gap: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     position: relative;
 }
 
@@ -341,6 +346,7 @@ a {
     border: 1px solid #EEE;
     padding: 40px 20px;
     position: relative;
+    flex: 1;
 }
 
 .welcome-section i {
@@ -451,16 +457,21 @@ a {
     }
     .hero-text button {
         font-size: 0.9rem;
-        padding: ;
+        padding: 15px 10px;
     }
 }
 
 /* Large devices (laptops) */
 @media (max-width: 992px) {
-
+    .welcome-section .box-container {
+        flex-direction: column;
+        width: unset;
+    }
 }
 
 /* Extra large devices (desktops) */
 @media (max-width: 1200px) {
-
+    .welcome-section .box-container {
+        width: unset;
+    }
 }
