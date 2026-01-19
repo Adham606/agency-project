@@ -376,7 +376,7 @@ a {
 
 /* start featured works */
 .featured-works .box1-container{
-    width: 100%;
+    width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -384,10 +384,12 @@ a {
     gap: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .featured-works .box1 {
-    flex-basis:300px;
+    flex:1 1 300px;
     height: 300px;
     overflow: hidden;
 }
