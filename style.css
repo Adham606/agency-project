@@ -381,11 +381,12 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 80px;
 }
 
 .featured-works .box1 {
@@ -411,6 +412,32 @@ a {
 /* Medium devices (tablets) */
 .open {
     width: 250px !important;
+}
+/* Extra large devices (desktops) */
+@media (max-width: 1200px) {
+    .welcome-section .box-container {
+        width: unset;
+    }
+    .featured-works .box1-container {
+        width: 900px;
+    }
+    .featured-works .box1 {
+        flex: 1 1 200px;
+    }
+}
+
+/* Large devices (laptops) */
+@media (max-width: 992px) {
+    .welcome-section .box-container {
+        flex-direction: column;
+        width: unset;
+    }
+    .featured-works .box1-container {
+        width: 800px;
+    }
+    .featured-works .box1 {
+        flex: 1 1 300px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -485,19 +512,8 @@ a {
         font-size: 0.9rem;
         padding: 15px 10px;
     }
-}
-
-/* Large devices (laptops) */
-@media (max-width: 992px) {
-    .welcome-section .box-container {
-        flex-direction: column;
+    .featured-works .box1-container {
         width: unset;
     }
-}
 
-/* Extra large devices (desktops) */
-@media (max-width: 1200px) {
-    .welcome-section .box-container {
-        width: unset;
-    }
 }
