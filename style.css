@@ -415,14 +415,33 @@ a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    /* display: none; */
     transition: 0.3s all;
     opacity: 0;
 }
 
 .featured-works .box1:hover .layout1 {
-    /* display: flex; */
     opacity: 0.8;
+}
+
+.layout1 .txt-out p {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.layout1 .txt-out h3 {
+    color: white;
+    font-weight: 800;
+}
+
+.layout1 .txt-out {
+    line-height: 1.5;
+}
+
+.layout1 i {
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    background-color: var(--main-color);
 }
 /* end featured works */
 
