@@ -381,7 +381,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -391,8 +391,8 @@ a {
 
 .featured-works .box1 {
     flex:1 1 300px;
-    /* overflow: hidden; */
     position: relative;
+    line-height: 0;
 }
 
 .featured-works img {
@@ -403,15 +403,26 @@ a {
 
 .featured-works .layout1 {
     position: absolute;
-    background-color: rgb( 255, 0, 0, 90);
-    display: flex;
+    background: #1C1D21;
     flex-direction: column;
     justify-content: center;
+    display: flex;
     align-items: center;
     text-align: center;
-    width: 105%;
-    height: 105%;
+    width: 110%;
+    height: 110%;
     opacity: 0.7;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+    transition: 0.3s all;
+    opacity: 0;
+}
+
+.featured-works .box1:hover .layout1 {
+    /* display: flex; */
+    opacity: 0.8;
 }
 /* end featured works */
 
