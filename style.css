@@ -436,18 +436,19 @@ a {
     line-height: 1.5;
 }
 
-.layout1 .hold-i {    
-    margin-top: 10px;
+.layout1 .hold-i {
+    margin-top: 30px;
 }
 
 .layout1 i {
     color: white;
     cursor: pointer;
-    /* padding: 15px; */
+    padding: 15px;
     height: 30px;
     width: 30px;
     display: inline;
     background-color: var(--main-color);
+    margin-top: 20px;
 }
 /* end featured works */
 
