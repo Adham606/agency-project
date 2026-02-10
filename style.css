@@ -436,19 +436,34 @@ a {
     line-height: 1.5;
 }
 
-.layout1 .hold-i {
-    margin-top: 30px;
+.hold-i {
+    display: flex;
+    gap: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
 }
 
-.layout1 i {
+.hold-i i {
     color: white;
     cursor: pointer;
-    padding: 15px;
-    height: 30px;
-    width: 30px;
-    display: inline;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--main-color);
-    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.box1:hover .hold-i {
+    opacity: 1;
+}
+
+.hold-i i:hover {
+    opacity: 0.8;
 }
 /* end featured works */
 
