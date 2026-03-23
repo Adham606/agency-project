@@ -490,6 +490,10 @@ a {
 /* end featured works */
 
 /* start offers */
+.offers .container {
+    display: flex;
+}
+
 
 /* end offers */
 
