@@ -570,7 +570,7 @@ a {
 /*start choose */
     .choose .text-hd {
         text-align: left;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
 
     .choose .text-hd::after {
@@ -593,8 +593,9 @@ a {
     }
 
     .choose .container {
+        width: 1200px;
         display: flex;
-        width: 1000px; 
+        gap: 20px;
     }
 
     .choose i {
