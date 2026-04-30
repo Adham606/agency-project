@@ -596,6 +596,8 @@ a {
         width: 1200px;
         display: flex;
         gap: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .choose i {
@@ -621,7 +623,8 @@ a {
         position: absolute;
     }
 
-    .choose .f-i, .f-i-r:hover {
+    .choose .f-i:hover,
+    .choose .f-i-r:hover {
         cursor: pointer;
         opacity: 0.9;
     }
@@ -636,6 +639,10 @@ a {
         border-radius: 20%;
         background-color: var(--main-color);
         margin: 0;
+    }
+
+    .choose .about-img {
+        transition: all 0.3s;
     }
 
     .choose .new-p {

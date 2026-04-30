@@ -7,6 +7,7 @@ window.addEventListener('load', function() {
     let header = document.getElementsByClassName('header')[0]
     let spanHolder = document.querySelector('.span-holder')
     let ul = document.querySelector('.nav')
+    let slider = document.querySelector('.about-img')
 
     function checkHeader() {
         if (window.scrollY > 50) {
@@ -64,16 +65,32 @@ window.addEventListener('load', function() {
         }
     }
 
+    document.querySelector(".f-i").addEventListener("click", function() {
+        if (slider.src.includes("about1.jpg")) {
+            slider.src= "images/about2.webp"
+        } else {
+            slider.src= "images/about1.jpg"
+        }
+    });
+
+    document.querySelector(".f-i-r").addEventListener("click", function() {
+        if (slider.src.includes("about1.jpg")) {
+            slider.src= "images/about2.webp"
+        } else {
+            slider.src= "images/about1.jpg"
+        }
+    });
+
     spanHolder.addEventListener ("click", function () {
         ul.classList.toggle("open")
-    })
+    });
 
     checkHeaderContainer();
     checkHeader();
     arrowChecker();
-    colorImg()
-    header1()
-    noName()
+    colorImg();
+    header1();
+    noName();
 
     window.addEventListener("resize", function() {
         noName()
