@@ -609,6 +609,34 @@ a {
         justify-content: center;
         align-items: center;
     }
+    
+    .second-father {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .choose .f-i,
+    .f-i-r {
+        position: absolute;
+    }
+
+    .choose .f-i, .f-i-r:hover {
+        cursor: pointer;
+        opacity: 0.9;
+    }
+
+    .choose .f-i-r { 
+        right: 0;
+    }
+
+    .choose .slider {
+        padding: 25px;
+        color: white;
+        border-radius: 20%;
+        background-color: var(--main-color);
+        margin: 0;
+    }
 
     .choose .new-p {
         margin-bottom: 30px;
