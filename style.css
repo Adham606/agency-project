@@ -641,10 +641,6 @@ a {
         margin: 0;
     }
 
-    .choose .about-img {
-        transition: all 0.3s;
-    }
-
     .choose .new-p {
         margin-bottom: 30px;
         font-size: 16px;
