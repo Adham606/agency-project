@@ -1,0 +1,7 @@
+1-go to the section when you click on it's link in the navbar
+2-when your screen is at a spacific section it's link in the navbar got hover automaticly
+3-the button that open the navbar when the screen is small, make it turn to X when click on it and back to it's hamburger shape when click on it again
+4-fix the blog post link issue in the small screen
+5-make when you click on the links when it's a small screen the link got border left and the a word move to the right
+6-add arrow apears when you scroll down in the page when you click on it it scroll to the top of the page
+7-add a loading animation page to the website
