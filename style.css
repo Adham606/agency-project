@@ -683,6 +683,9 @@ a {
     .offers .h2-text {
         font-size: 19px;
     }
+    .choose img {
+        height: 350px;
+    }
 }
 
 /* Large devices (laptops) */
@@ -702,6 +705,12 @@ a {
     }
     .offers .box {
         flex-basis: 48%;
+    }
+    .choose {
+        flex-direction: column;
+    }
+    .choose img {
+        
     }
 }
 
