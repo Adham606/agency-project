@@ -777,9 +777,16 @@ a {
     .second-father {
         width: 100%;
     }
-    /* .background-2 .f-f {
+    .background-2 .f-f {
         display: grid;
-    } */
+        grid-template-columns: 50% 50%;
+        gap: 35px;
+    }
+    .background-2 {
+        height: unset;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -863,5 +870,15 @@ a {
 
     .offers .box {
         flex: 1 1 100%;
+    }
+    .background-2 .f-f {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 35px;
+    }
+    .background-2 {
+        height: unset;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
