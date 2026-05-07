@@ -687,6 +687,7 @@ a {
     justify-content: center;
     align-items: center;
     z-index: 3;
+    gap: 180px;
 }
 
 .background-2 i {
@@ -741,6 +742,9 @@ a {
     .choose img {
         height: 350px;
     }
+    .background-2 .f-f {
+        gap: 120px;
+    }
 }
 
 /* Large devices (laptops) */
@@ -773,6 +777,9 @@ a {
     .second-father {
         width: 100%;
     }
+    /* .background-2 .f-f {
+        display: grid;
+    } */
 }
 
 @media (max-width: 768px) {
