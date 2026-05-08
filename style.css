@@ -717,15 +717,25 @@ a {
     padding-bottom: 100px;
 }
 
+.pricing .container {
+    display: flex;
+    width: 1200px;
+    padding-top: 80px;
+    gap: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
 .pricing .pr-box {
     display: flex;
     flex-direction: column;
-    padding: 20px;
     gap: 25px;
     align-items: center;
     text-align: center;
     border: 1px solid #EEE;
     position: relative;
+    width: 32%;
 }
 
 .pricing .pr-box::after {
@@ -735,10 +745,23 @@ a {
     position: absolute;
     background-color: #1C1D21;
     transition: all 0.2s;
+    z-index: -2;
 }
 
 .pricing .pr-box:hover::after{
     height: 100%;
+}
+
+.pricing .pr-box:hover .s {
+    color: var(--main-color);
+}
+
+.pricing .pr-box:hover h3 {
+    color: white;
+}
+
+.pricing .f-cir {
+    margin-top: 50px;
 }
 
 .pricing .s,
@@ -784,6 +807,7 @@ a {
     border-radius: 3px;
     cursor: pointer;
     transition: 0.2s opacity;
+    margin-bottom: 50px;
 }
 
 .pricing button:hover {
@@ -824,6 +848,10 @@ a {
     }
     .background-2 .f-f {
         gap: 120px;
+    }
+    .pricing .container {
+        width: 900px;
+        gap: 40px;
     }
 }
 
@@ -866,6 +894,10 @@ a {
         height: unset;
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+    .pricing .container {
+        width: 700px;
+        gap: 40px;
     }
 }
 
@@ -960,5 +992,13 @@ a {
         height: unset;
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+    .pricing .container {
+        width: 100%;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .pricing .pr-box {
+        width: 100%;
     }
 }
