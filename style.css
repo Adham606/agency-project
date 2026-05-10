@@ -839,6 +839,11 @@ a {
     opacity: .8;
     background-color: #1C1D21;
 }
+
+.background-3 .i-card {
+    z-index: 2;
+    position: relative;
+}
 /* background-3 */
 
 /* media query */
