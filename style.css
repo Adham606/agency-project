@@ -829,6 +829,14 @@ a {
     align-items: center;
 }
 
+.background-3 .container {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 890px;
+    gap: 42px;
+}
+
 .background-3::after {
     content: "";
     position: absolute;
@@ -881,6 +889,10 @@ a {
     line-height: 0;
 }
 /* background-3 */
+
+/* team */
+
+/* team */
 
 /* media query */
 
@@ -1064,5 +1076,8 @@ a {
     }
     .pricing .pr-box {
         width: 100%;
+    }
+    .background-3 .container {
+        flex-direction: column;
     }
 }
