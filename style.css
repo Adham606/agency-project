@@ -891,7 +891,42 @@ a {
 /* background-3 */
 
 /* team */
+.team {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
+.team .container {
+    padding-top: 80px;
+}
+
+.team .t-card {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #F4F4F4;
+    width: fit-content;
+}
+
+.team img {
+    width: 300px;
+}
+
+.team h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 0px;
+    color: #10161A;
+    font-size: 21px;
+    margin-bottom: 10px;
+    transition: 0.2s color;
+}
+
+.team span {
+    font-size: 14px;
+    transition: 0.2s color;
+    text-transform: uppercase;
+    color: #868F9B;
+}
 /* team */
 
 /* media query */
