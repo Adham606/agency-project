@@ -898,6 +898,14 @@ a {
 
 .team .container {
     padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    gap: 40px;
 }
 
 .team .t-card {
@@ -997,9 +1005,11 @@ a {
 }
 /* team */
 
+/* news */
+
+/* news */
+
 /* media query */
-
-
 
 /* Medium devices (tablets) */
 .open {
@@ -1031,6 +1041,12 @@ a {
     .pricing .container {
         width: 900px;
         gap: 40px;
+    }
+    .team img {
+        width: 240px;
+    }
+    .team .container {
+        width: 900px;
     }
 }
 
@@ -1077,6 +1093,13 @@ a {
     .pricing .container {
         width: 700px;
         gap: 40px;
+    }
+    .team img {
+        width: 150px;
+    }
+    .team .container {
+        width: 500px;
+        gap: 20px;
     }
 }
 
@@ -1182,5 +1205,13 @@ a {
     }
     .background-3 .container {
         flex-direction: column;
+    }
+    .team img {
+        width: 100%;
+    }
+    .team .container {
+        width: 100%;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 }
