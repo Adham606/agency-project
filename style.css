@@ -1012,6 +1012,14 @@ a {
     background-color: var(--background-color);
 }
 
+.news .container {
+    margin-top: 80px;
+}
+
+.news .n-card {
+    background-color: white;
+}
+
 .news ul li {
     display: inline-block;
     margin-right: 15px;
@@ -1019,6 +1027,36 @@ a {
 
 .news i {
     color: var(--main-color);
+}
+
+.news a {
+    color: var(--main-color);
+}
+
+.news .n-i-card {
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+.news .n-t-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 0 20px;
+}
+
+.news h3 {
+    font-size: 21px;
+}
+
+.news p {
+    max-width: 600px;
+    color: #868F9B;
+}
+
+.news img {
+    height: 200px;
 }
 /* news */
 
