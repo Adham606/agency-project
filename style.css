@@ -6,6 +6,7 @@ html {
 body {
     font-family: 'Varela Round', sans-serif;
     line-height: 1.5;
+    height: 30000px; 
 }
 
 ::selection {
@@ -1112,7 +1113,37 @@ a {
     justify-content: space-between;
 }
 
+.touch input {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #F4F4F4;
+    color: #354052;
+    padding: 0px 10px;
+    opacity: 0.5;
+}
 
+.touch form {
+    text-align: center;
+    width: 700px;
+    margin: 40px auto;
+}
+
+.touch .t-f-i {
+    display: flex;
+    gap: 10px;
+}
+
+.touch .t-s-i {
+    display: flex;
+    flex-direction: column;
+}
+
+.touch textarea {
+    max-width: 100%;
+    min-width: 100%;
+}
 /* touch */
 
 
