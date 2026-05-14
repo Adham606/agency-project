@@ -1085,6 +1085,7 @@ a {
     flex-direction: column;
     line-height: 1.8;
     align-items: center;
+    width: 33.333%;
 }
 
 .touch i {
@@ -1110,6 +1111,8 @@ a {
     display: flex;
     justify-content: space-between;
 }
+
+
 /* touch */
 
 
@@ -1164,6 +1167,9 @@ a {
     }
     .news h3 {
         font-size: 15px;
+    }
+    .touch .container {
+        width: auto;
     }
 }
 
@@ -1224,6 +1230,9 @@ a {
     }
     .news img {
         height: auto;
+    }
+    .touch .container {
+        width: auto;
     }
 }
 
@@ -1337,5 +1346,10 @@ a {
         width: 100%;
         gap: 20px;
         flex-wrap: wrap;
+    }
+    .touch .contacts {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
     }
 }
