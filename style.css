@@ -35,7 +35,93 @@ a {
     --w-color: white;
 }
 
+/* loader */
+#loader {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 999999999999999999;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    animation: plus 1s infinite ease-in-out;
+}
+
+    
+@keyframes plus {
+    0%, 100% {
+        transform: scale(0.5);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.dot:nth-child(4) {
+    animation-delay: 0.6s;
+}
+/* loader */
+
 /*start hero-serction */
+
+.arrow-g {
+    padding: 20px;
+    color: white;
+    border-radius: 10%;
+    background-color: var(--main-color);
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    z-index: 99999999999999;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.arrow-g:hover {
+    opacity: 0.8;
+}
+
 .hero-section {
     background-image: url(images/background1.webp);
     height: 100vh;
@@ -160,8 +246,12 @@ a {
     font-size: 14px;
 }
 
+.black {
+    color: black !important;
+}
+
 .header ul li a:hover {
-    opacity: 0.8;
+    color: var(--main-color) !important;
 }
 
 .header .drop-minue > a::before {
@@ -187,6 +277,10 @@ a {
     left: 0;
 }
 
+.header ul li a.active::after {
+    width: 100%;
+}
+
 .header ul li a:not(.drop-minue a):hover::after {
     width: 100%;
     transition: 0.2s width;
@@ -208,36 +302,8 @@ a {
     display: none;
 }
 
-.header .drop-minue {
-    position: relative;
-}
-
-.header .drop-minue ul{
-    display: none;
-    width: 180px;
-    padding: 5px 20px 5px 10px;
-    position: absolute;
-    background-color: var(--main-color);
-    bottom: -30px;
-    cursor: pointer;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.header .drop-minue:hover ul{
-    display: block;
-}
-
-.drop-minue:hover .lol1::before {
-    transform: rotate(-90deg);
-}
-
 .nav ul li:not(.new-padding) {
     height: 50px;
-}
-
-.black {
-    color: black !important;
 }
 
 .bk-color {
@@ -1403,6 +1469,7 @@ a {
 
     .header .nav ul a:hover {
         background-color: var(--main-color);
+        color: white !important;
     }
 
     .header #wh-img {

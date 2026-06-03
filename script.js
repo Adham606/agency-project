@@ -1,14 +1,14 @@
 window.addEventListener('load', function() {
     let myElement = document.querySelector('.header-container');
     let newElement = document.querySelectorAll('.header a');
-    let arrow = document.querySelector('.drop-minue > a')
     let whImg = document.getElementById("wh-img")
     let blImg = document.getElementById("bl-img")
     let header = document.getElementsByClassName('header')[0]
     let spanHolder = document.querySelector('.span-holder')
     let ul = document.querySelector('.nav')
     let slider = document.querySelector('.about-img')
-
+    let arrowg = document.querySelector('.arrow-g')
+    
     function checkHeader() {
         if (window.scrollY > 50) {
             for (let i = 0; i < newElement.length; i++) {
@@ -20,6 +20,21 @@ window.addEventListener('load', function() {
             }
         }
     }
+    
+    function arrowgChecker() {
+        if (window.scrollY > 800) {
+            arrowg.classList.add('active')
+        } else {
+            arrowg.classList.remove('active')
+        }
+    }
+
+    arrowg.addEventListener ('click', ()=> {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    })
 
     function checkHeaderContainer() {
         if (window.innerWidth <= 768) {
@@ -36,14 +51,6 @@ window.addEventListener('load', function() {
             for (let i = 0; i < newElement.length; i++) {
                 newElement[i].classList.remove('black')
             }
-        }
-    }
-
-    function arrowChecker() {
-        if (window.scrollY > 50) {
-            arrow.style.setProperty("--w-color", "black");
-        } else {
-            arrow.style.setProperty('--w-color', 'white');
         }
     }
 
@@ -87,7 +94,6 @@ window.addEventListener('load', function() {
 
     checkHeaderContainer();
     checkHeader();
-    arrowChecker();
     colorImg();
     header1();
     noName();
@@ -99,9 +105,16 @@ window.addEventListener('load', function() {
     window.addEventListener('scroll', function() {
         checkHeader();
         checkHeaderContainer()
-        arrowChecker()
         colorImg()
         header1()
         noName()
+        arrowgChecker()
     });
+});
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+        loader.classList.add("hide");
+    }, 1200);
 });
